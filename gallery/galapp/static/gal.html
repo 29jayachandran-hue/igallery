@@ -1,0 +1,40 @@
+gal.html
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>aesthetic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>aesthetic</h2>
+<h3>Jayachandran A (25015034)</h3>
+<hr>
+<br>
+<br>
+
+<div class="gallery">
+    <img src="https://i.pinimg.com/736x/a5/78/03/a57803e6f37f73382bf89b007a4b5954.jpg" data-title="Desert View" onclick="openImage(this)">
+    <img src="https://i.pinimg.com/736x/83/33/be/8333beeaed9ab42f0fc590e26f2b6986.jpg" data-title="Ocean View" onclick="openImage(this)">
+    <img src="https://i.pinimg.com/736x/68/2b/60/682b604d466185e1a2368aadd85c09cc.jpg" data-title="Night Sky" onclick="openImage(this)">
+    <img src="https://i.pinimg.com/originals/cb/90/9d/cb909db943872a2963aa92914b9fc754.jpg" data-title="Mountain View" onclick="openImage(this)">
+    <img src="https://i.pinimg.com/736x/f8/fb/c3/f8fbc3e6e525191c93e3e95d5ce79d97.jpg" data-title="Waterfalls" onclick="openImage(this)">
+</div>
+<br>
+<br>
+<hr>
+
+<div class="modal" id="imageModal" onclick="closeImage()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="close" onclick="closeImage()">&times;</span>
+
+        
+        <img id="modalImg" src="">
+
+        <p id="caption"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
